@@ -143,28 +143,31 @@ The validation confirmed:
 
 | Setting | Value |
 |---------|-------|
-| Port | 22 |
+| Service | OpenSSH Server |
+| Status | Running |
+| Startup | Enabled |
 | Authentication | Password |
-| Service | Enabled |
-| Startup | Automatic |
+| Port | 22 |
+| Remote Administration | Enabled |
+| Client | Windows OpenSSH |
 
 ---
 
 ## Security
 
-Current implementation:
+Current configuration:
 
-- Password authentication enabled
-- Default SSH port (22)
+- Password authentication is enabled.
+- The SSH service is listening on the default port (22).
+- The service starts automatically during system boot.
 
-Future improvements:
+Planned improvements:
 
-- SSH key authentication
-- Disable password authentication
-- Disable root login
-- Fail2Ban
-- UFW firewall rules
-
+- Configure SSH key authentication.
+- Disable password authentication.
+- Disable root login.
+- Configure UFW firewall rules.
+- Install and configure Fail2Ban.
 ---
 
 ## Troubleshooting
@@ -187,6 +190,9 @@ Recovered the correct credentials and successfully authenticated.
 
 ## Lessons Learned
 
-- Always validate SSH immediately after installing the operating system.
-- Store credentials securely in a password manager.
-- Verify connectivity before assuming the SSH service is unavailable.
+## Lessons Learned
+
+- Validate remote access immediately after installing the operating system.
+- Verify the SSH service status before deploying additional services.
+- Confirm network connectivity before troubleshooting authentication issues.
+- Document the server baseline before implementing infrastructure changes.
