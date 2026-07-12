@@ -2,6 +2,10 @@
 
 A hands-on home lab project designed to develop practical skills in Linux administration, networking, monitoring and cloud infrastructure.
 
+## Current Architecture
+
+![Home Lab Topology](assets/diagrams/homelab-topology-v1.png)
+
 ## Objectives
 
 - Linux Administration
@@ -13,9 +17,11 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 ## Current Environment
 
 ### Hardware
-- Intel NUC8EH i3 
+
+- Intel NUC8i3BEK
 
 ### Operating System
+
 - Ubuntu Server 26.04 LTS
 
 ## Current Services
@@ -24,6 +30,9 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 - [ ] UFW Firewall
 - [ ] Docker
 - [ ] Portainer
+
+## Planned Services
+
 - [ ] Pi-hole
 - [ ] Uptime Kuma
 - [ ] Grafana
@@ -31,14 +40,14 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 
 ## Documentation
 
-- Project Overview
-- Hardware
-- Installation
-- Networking
-- Security
-- Services
-- Monitoring
-- Troubleshooting
+- [Project Overview](docs/01-project-overview.md)
+- [Hardware Inventory](docs/02-hardware.md)
+- [Ubuntu Server Installation](docs/03-installation.md)
+- Network Configuration *(coming soon)*
+- Security *(coming soon)*
+- Services *(coming soon)*
+- Monitoring *(coming soon)*
+- Troubleshooting *(coming soon)*
 
 ## Learning Journey
 
