@@ -31,7 +31,7 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 
 ## Current Services
 
-- [ ] SSH
+- [X] SSH
 - [ ] UFW Firewall
 - [ ] Docker
 - [ ] Portainer
