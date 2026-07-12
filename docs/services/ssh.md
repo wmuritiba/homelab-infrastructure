@@ -2,164 +2,128 @@
 
 ## Overview
 
-SSH (Secure Shell) provides secure remote access to the Ubuntu Server, allowing command-line administration over the network.
+SSH (Secure Shell) provides secure remote access to the Ubuntu Server, allowing administration from another computer without requiring physical access.
 
-This is the first service deployed in the Home Lab infrastructure and serves as the foundation for all future administration tasks.
-
----
-
-## Objectives
-
-- Enable secure remote administration.
-- Reduce the need for physical access to the server.
-- Prepare the environment for future service deployments.
+This is the first service deployed in the Home Lab environment.
 
 ---
 
-## Environment
+# Objective
 
-| Component | Details |
-|-----------|---------|
-| Server | Intel NUC8 i3 |
-| Operating System | Ubuntu Server 26.04 LTS |
-| Service | OpenSSH Server |
+Provide secure remote administration for the Home Lab server.
 
 ---
 
-## Installation
+# Architecture
 
-Update package information:
+Client (Windows 11)
+
+↓
+
+SSH (TCP/22)
+
+↓
+
+Ubuntu Server
+
+↓
+
+Intel NUC8 i3
+
+---
+
+# Implementation
+
+### Install OpenSSH Server
 
 ```bash
 sudo apt update
-```
-
-Install OpenSSH Server:
-
-```bash
 sudo apt install openssh-server
 ```
 
-Enable the service:
+### Enable the service
 
 ```bash
 sudo systemctl enable ssh
-```
-
-Start the service:
-
-```bash
 sudo systemctl start ssh
 ```
 
 ---
 
-## Verification
+# Validation
 
-Check service status:
+Service status
 
 ```bash
 sudo systemctl status ssh
 ```
 
-Verify that SSH is listening on port 22:
+Listening port
 
 ```bash
-sudo ss -tulpn | grep ssh
+ss -tulpn | grep ssh
 ```
 
-Confirm the server IP address:
+Remote connection
 
-```bash
-ip addr
-```
-
-Test the connection from another computer:
-
-```bash
+```powershell
 ssh username@server-ip
 ```
 
+Result
+
+✅ Successfully connected from Windows.
+
 ---
 
-## Initial Configuration
+# Current Configuration
 
-Current configuration:
+| Setting | Value |
+|---------|-------|
+| Port | 22 |
+| Authentication | Password |
+| Root Login | Default |
+| Startup | Enabled |
 
-- Default SSH port (22)
-- Password authentication enabled
-- Root login: Default Ubuntu configuration
+---
 
-Future improvements:
+# Future Improvements
 
 - Disable root login
-- Enable key-based authentication
+- Configure SSH keys
 - Disable password authentication
-- Configure Fail2Ban
-- Change SSH port (optional)
-
----
-
-## Security Considerations
-
-Current security level:
-
-- SSH service enabled
-- Firewall configuration pending
-
-Planned hardening:
-
-- SSH keys only
-- Disable root login
+- Configure UFW rules
 - Install Fail2Ban
-- Configure UFW firewall rules
 
 ---
 
-## Troubleshooting
+# Troubleshooting
 
-### Service not running
+## Issue
 
-Symptoms:
+Unable to log in remotely.
 
-```
-Connection refused
-```
+### Investigation
 
-Solution:
+- SSH service responded correctly.
+- Network connectivity verified.
+- Authentication prompt displayed.
 
-```bash
-sudo systemctl start ssh
-```
+### Root Cause
 
----
+Incorrect password.
 
-### SSH not enabled after reboot
+### Resolution
 
-Solution:
-
-```bash
-sudo systemctl enable ssh
-```
+Recovered the correct credentials and successfully authenticated.
 
 ---
 
-### Cannot connect remotely
+# Lessons Learned
 
-Verify:
-
-- Server IP address
-- Network connectivity
-- SSH service status
-- Firewall rules
-
----
-
-## Lessons Learned
-
-This deployment introduced the first remote management service into the Home Lab environment.
-
-Key concepts reinforced:
+- Verify SSH connectivity before assuming the service is unavailable.
+- Document deployment credentials in a secure password manager.
+- Test remote access immediately after installation.
 
 - Linux service management
 - systemd
