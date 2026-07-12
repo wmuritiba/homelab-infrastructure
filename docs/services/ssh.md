@@ -66,7 +66,7 @@ Remote administration was successfully validated from a Windows workstation usin
   <img
     src="../../assets/screenshots/system-information.png"
     alt="Ubuntu Server system information"
-    width="650"
+    width="700"
   >
 </p>
 
