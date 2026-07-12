@@ -73,6 +73,7 @@ Remote administration was successfully validated from a Windows workstation usin
 <p align="center">
   <em>Figure 2 — Ubuntu Server system information and hardware details.</em>
 </p>
+
 ### Network Interfaces
 
 The network interfaces were verified after the SSH deployment to confirm the server connectivity and identify the active network adapter.
