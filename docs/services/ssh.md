@@ -192,8 +192,6 @@ Recovered the correct credentials and successfully authenticated.
 
 ## Lessons Learned
 
-## Lessons Learned
-
 - Validate remote access immediately after installing the operating system.
 - Verify the SSH service status before deploying additional services.
 - Confirm network connectivity before troubleshooting authentication issues.
