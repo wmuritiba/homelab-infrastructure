@@ -139,6 +139,8 @@ The validation confirmed:
   <em>Figure 5 — OpenSSH service status after enabling the service for automatic startup.</em>
 </p>
 
+---
+
 ## Configuration
 
 | Setting | Value |
