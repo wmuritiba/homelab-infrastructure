@@ -73,6 +73,23 @@ Remote administration was successfully validated from a Windows workstation usin
 <p align="center">
   <em>Figure 2 — Ubuntu Server system information and hardware details.</em>
 </p>
+### Network Interfaces
+
+The network interfaces were verified after the SSH deployment to confirm the server connectivity and identify the active network adapter.
+
+The server is currently connected through the wireless interface (`wlp0s20f3`), while the onboard Ethernet interface (`eno1`) is available for future infrastructure expansion.
+
+<p align="center">
+  <img
+    src="../../assets/screenshots/network-interfaces.png"
+    alt="Ubuntu Server network interfaces"
+    width="700"
+  >
+</p>
+
+<p align="center">
+  <em>Figure 3 — Network interfaces identified after the initial server deployment.</em>
+</p>
 
 ## Configuration
 
