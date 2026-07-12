@@ -60,6 +60,19 @@ Remote administration was successfully validated from a Windows workstation usin
 </p>
 
 ---
+### System Information
+
+<p align="center">
+  <img
+    src="../../assets/screenshots/system-information.png"
+    alt="Ubuntu Server system information"
+    width="650"
+  >
+</p>
+
+<p align="center">
+  <em>Figure 2 — Ubuntu Server system information and hardware details.</em>
+</p>
 
 ## Configuration
 
