@@ -105,7 +105,7 @@ The validation confirmed:
 
 <p align="center">
   <img
-    src="../../assets/screenshots/routing-table.png"
+    src="../../assets/screenshots/routing-table-before-vpn.png"
     alt="Ubuntu Server routing table"
     width="700"
   >
