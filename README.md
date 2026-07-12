@@ -11,6 +11,29 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 <i>Figure 1 – Initial Home Lab network topology.</i>
 </p>
 
+## Project Status
+
+### Completed
+
+- [x] Repository created
+- [x] Initial documentation
+- [x] Network topology documented
+- [x] Ubuntu Server deployed
+- [x] SSH configured
+
+### In Progress
+
+- [ ] VPN Gateway
+
+### Planned
+
+- [ ] Docker
+- [ ] Portainer
+- [ ] Pi-hole
+- [ ] Uptime Kuma
+- [ ] Grafana
+- [ ] WireGuard
+
 ## Objectives
 
 - Linux Administration
