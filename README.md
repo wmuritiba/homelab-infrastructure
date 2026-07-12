@@ -10,6 +10,7 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 <p align="center">
 <i>Figure 1 – Initial Home Lab network topology.</i>
 </p>
+
 ## Objectives
 
 - Linux Administration
