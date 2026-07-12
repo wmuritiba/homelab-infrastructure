@@ -92,6 +92,29 @@ The server is currently connected through the wireless interface (`wlp0s20f3`), 
   <em>Figure 3 — Network interfaces identified after the initial server deployment.</em>
 </p>
 
+### Routing Table
+
+The routing table was verified to confirm that the server received a valid default gateway and that network traffic was correctly routed through the active network interface.
+
+The validation confirmed:
+
+- A default route was successfully configured.
+- Network routes were assigned through DHCP.
+- The active interface (`wlp0s20f3`) was correctly selected.
+- Local subnet routing was successfully established.
+
+<p align="center">
+  <img
+    src="../../assets/screenshots/routing-table.png"
+    alt="Ubuntu Server routing table"
+    width="700"
+  >
+</p>
+
+<p align="center">
+  <em>Figure 4 — Routing table validation after the initial Ubuntu Server deployment.</em>
+</p>
+
 ## Configuration
 
 | Setting | Value |
