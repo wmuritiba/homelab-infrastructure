@@ -5,7 +5,7 @@ A hands-on home lab project designed to develop practical skills in Linux admini
 ## Current Architecture
 
 <p align="center">
-  <img src="assets/diagrams/homelab-topology-v1.png" width="700">
+  <img src="assets/diagrams/homelab-topology-v1.png" width="500">
 </p>
 
 ## Objectives
