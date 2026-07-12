@@ -47,9 +47,17 @@ Remote administration was successfully validated from a Windows workstation usin
 
 ### SSH Login
 
-![SSH Login](../../assets/screenshots/ssh-login.png)
+<p align="center">
+  <img
+    src="../../assets/screenshots/ssh-login.png"
+    alt="Successful SSH connection from a Windows workstation"
+    width="700"
+  >
+</p>
 
-*Figure 1 — Successful SSH connection from a Windows workstation.*
+<p align="center">
+  <em>Figure 1 — Successful SSH connection from a Windows workstation.</em>
+</p>
 
 ---
 
