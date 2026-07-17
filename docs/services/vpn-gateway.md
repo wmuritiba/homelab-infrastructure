@@ -132,7 +132,7 @@ The validation confirmed:
 
 <p align="center">
   <img
-    src="../../assets/screenshots/wireguard-status.png"
+    src="../../assets/screenshots/wgshow.png"
     alt="Active Surfshark WireGuard tunnel"
     width="650"
   >
@@ -159,7 +159,7 @@ The validation confirmed:
 
 <p align="center">
   <img
-    src="../../assets/screenshots/wg0-interface.png"
+    src="../../assets/screenshots/showwg0.png"
     alt="WireGuard wg0 network interface"
     width="650"
   >
@@ -186,7 +186,7 @@ The result confirmed:
 
 <p align="center">
   <img
-    src="../../assets/screenshots/vpn-public-ip.png"
+    src="../../assets/screenshots/ipinfo.png"
     alt="Public network identity after VPN activation"
     width="650"
   >
